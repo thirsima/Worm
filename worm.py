@@ -10,6 +10,9 @@ class Worm:
 
     def draw(self, screen):
         pygame.draw.circle(screen, self.color, (self.x, self.y), 5)
+
+    def move(self):
+        self.x = self.x + 10
         
         
         
