@@ -1,14 +1,15 @@
 import pygame
 
 class Worm:
-    color = (255,255,255)
+ 
     
-    def __init__(self):
-        self.x = 0
-        self.y = 0
+    def __init__(self, x, y):
+        self.x = x
+        self.y = y
+        self.color = (255,255,255)
 
-    def draw(screen):
-        pygame.draw.circle(screen, color, (self.x, self.y), 5)
+    def draw(self, screen):
+        pygame.draw.circle(screen, self.color, (self.x, self.y), 5)
         
         
         
